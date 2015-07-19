@@ -19,7 +19,7 @@ import javax.ws.rs.Produces;
  *
  * @author pankajtiwana
  */
-@Path("blog")
+@Path("/blog")
 public class blog {
 
     @Context
