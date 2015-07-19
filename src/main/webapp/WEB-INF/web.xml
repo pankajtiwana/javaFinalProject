@@ -12,10 +12,7 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+   
     
     
     <servlet>
@@ -23,7 +20,10 @@
         <servlet-class>credentials.UserCredentials</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-  
+   <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <url-pattern>blog/*</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>UserCredentials</servlet-name>
         <url-pattern>/UserCredentials</url-pattern>
