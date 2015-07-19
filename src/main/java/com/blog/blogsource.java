@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package blogbase;
+package com.blog;
 
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -19,20 +18,20 @@ import javax.ws.rs.Produces;
  *
  * @author pankajtiwana
  */
-@Path("/blog")
-public class blogs {
+@Path("blog")
+public class blogsource {
 
     @Context
     private UriInfo context;
 
     /**
-     * Creates a new instance of blogs
+     * Creates a new instance of blogsource
      */
-    public blogs() {
+    public blogsource() {
     }
 
     /**
-     * Retrieves representation of an instance of blogbase.blogs
+     * Retrieves representation of an instance of com.blog.blogsource
      * @return an instance of java.lang.String
      */
     @GET
@@ -43,7 +42,7 @@ public class blogs {
     }
 
     /**
-     * PUT method for updating or creating an instance of blogs
+     * PUT method for updating or creating an instance of blogsource
      * @param content representation for the resource
      * @return an HTTP response with content of the updated or created resource.
      */
