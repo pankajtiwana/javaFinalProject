@@ -14,7 +14,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>blogspacer/*</url-pattern>
+        <url-pattern>blog/*</url-pattern>
     </servlet-mapping>
     
     
