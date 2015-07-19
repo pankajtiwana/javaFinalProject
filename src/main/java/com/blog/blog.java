@@ -7,6 +7,7 @@ package com.blog;
 
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -19,19 +20,19 @@ import javax.ws.rs.Produces;
  * @author pankajtiwana
  */
 @Path("blog")
-public class blogsource {
+public class blog {
 
     @Context
     private UriInfo context;
 
     /**
-     * Creates a new instance of blogsource
+     * Creates a new instance of blog
      */
-    public blogsource() {
+    public blog() {
     }
 
     /**
-     * Retrieves representation of an instance of com.blog.blogsource
+     * Retrieves representation of an instance of com.blog.blog
      * @return an instance of java.lang.String
      */
     @GET
@@ -42,7 +43,7 @@ public class blogsource {
     }
 
     /**
-     * PUT method for updating or creating an instance of blogsource
+     * PUT method for updating or creating an instance of blog
      * @param content representation for the resource
      * @return an HTTP response with content of the updated or created resource.
      */
