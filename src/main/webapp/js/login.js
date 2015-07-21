@@ -6,12 +6,12 @@
 
 $(document).ready(function () {
 
-
+  alert('hello');
 
 
     $("#log").click(function (e) {
         e.preventDefault();
-       
+     
         var username = document.getElementById("name").value;
         var password = document.getElementById("pass").value;
 
