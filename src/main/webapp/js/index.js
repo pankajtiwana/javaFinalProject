@@ -6,6 +6,7 @@ $('input[type="submit"]').mouseup(function(){
 });
 
 $('#loginform').click(function(){
+   
   $('.login').fadeToggle('slow');
   $(this).toggleClass('green');
 });
