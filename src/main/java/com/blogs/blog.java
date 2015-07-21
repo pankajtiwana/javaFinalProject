@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.blog;
+package com.blogs;
 
+import javax.ejb.Stateful;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.PathParam;
@@ -19,6 +20,7 @@ import javax.ws.rs.Produces;
  *
  * @author pankajtiwana
  */
+@Stateful
 @Path("blog")
 public class blog {
 
@@ -32,7 +34,7 @@ public class blog {
     }
 
     /**
-     * Retrieves representation of an instance of com.blog.blog
+     * Retrieves representation of an instance of com.blogs.blog
      * @return an instance of java.lang.String
      */
     @GET

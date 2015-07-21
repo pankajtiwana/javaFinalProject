@@ -1,3 +1,4 @@
+
 package credentials;
 
 /*
@@ -25,6 +26,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author pankajtiwana
  */
+@WebServlet(name = "UserCredentials", urlPatterns = {"/UserCredentials"})
+
 public class UserCredentials extends HttpServlet {
 
     Connection con = null;
